@@ -13,7 +13,6 @@ public class CinemaTicket{
         row = r;
         seat = s;
         
-        double price;
         if (row==1 || row==2){
             price = 10.0;
         }
