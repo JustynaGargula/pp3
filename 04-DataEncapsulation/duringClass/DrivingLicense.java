@@ -13,8 +13,8 @@ public String getDriverName(){
     return driverName;
 }
 public void setDriverName(String name){
-    name = name.substring(beginIndex:0,endIndex:1).toUpperCase()
-        +name.substring(beginIndex:1).toLowerCase();
+    name = name.substring(0,1).toUpperCase()
+        +name.substring(1).toLowerCase();
     driverName = name;
 }
 
@@ -85,7 +85,7 @@ public String toString(){
 
     public static void main(String[] args){
         DrivingLicense dL1 = new DrivingLicense();
-        dL1.driverName = "Justyna";
+        dL1.setDriverName("justyna");
         
         System.out.println(dL1);
         
