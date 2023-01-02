@@ -1,29 +1,17 @@
 
 public class SMS extends Message{
 
-    private String phoneNumber;
-    
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
+    private User user;
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-
-    public SMS(String text, String phoneNumber) {
+    public SMS(String text, User user) {
         super(text);
-        this.phoneNumber = phoneNumber;
+        this.user = user;
     }
 
     public void send(){
         System.out.println("Message: "+getText());
-        System.out.println("Phone number of recipient: "+phoneNumber);
+        System.out.println("Phone number of recipient: "+user.getPhoneNumber());
         System.out.println("Length of message: "+charNumber());
     }
 
-
-
-    
 }
