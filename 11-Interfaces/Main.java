@@ -4,13 +4,16 @@ public class Main {
         TV t = new TV();
         t.on();
         t.displayStatus();
-        t.channelUp();
-        t.setChannel(7);
-        t.setChannel(142);
-        t.displayStatus();
-        t.channelDown();
+        t.setChannel(15);
+        t.volumeUp();
+        t.volumeUp();
+        t.volumeUp();
+        t.volumeUp();
+        t.volumeUp();
+        t.volumeUp();
         t.displayStatus();
         t.off();
         t.displayStatus();
+        t.displayList();
     }
 }
